@@ -1,0 +1,51 @@
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary Files
+*.tmp
+*.bak
+*.log
+
+# Build Files - Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Build Files - VitePress
+docs/.vitepress/dist
+docs/.vitepress/cache
+.temp/
+
+# Node modules
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Python (MkDocs)
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+site/
+
+# Personal Notes (optional)
+_private/
+_drafts/
+
+# Backup Files
+*.backup
+
+# Environment
+.env
+.env.local

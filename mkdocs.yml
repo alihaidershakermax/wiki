@@ -1,0 +1,196 @@
+# إعدادات MkDocs للويكي الشخصي
+
+# معلومات الموقع
+site_name: ويكي علي الأكبر حيدر
+site_description: مستودع مركزي للمعرفة الشخصية، المشاريع، والأفكار
+site_author: علي الأكبر حيدر
+site_url: https://alihaidershakermax.github.io/wiki/
+
+# المستودع
+repo_name: alihaidershakermax/wiki
+repo_url: https://github.com/alihaidershakermax/wiki
+edit_uri: edit/main/docs/
+
+# الثيم
+theme:
+  name: material
+  language: ar
+  direction: rtl
+  
+  # الألوان - تدرجات عصرية
+  palette:
+    # الوضع الفاتح - تدرج أزرق عصري
+    - scheme: default
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: التبديل إلى الوضع الداكن
+    
+    # الوضع الداكن - تدرج بنفسجي عصري
+    - scheme: slate
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: التبديل إلى الوضع الفاتح
+  
+  # الخطوط
+  font:
+    text: Cairo
+    code: Fira Code
+  
+  # الأيقونات
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+  
+  # الميزات - إضافة ميزات عصرية
+  features:
+    - navigation.instant      # تحميل سريع
+    - navigation.instant.prefetch  # تحميل مسبق
+    - navigation.instant.progress  # شريط تقدم
+    - navigation.tracking     # تتبع التنقل
+    - navigation.tabs         # تبويبات علوية
+    - navigation.tabs.sticky  # تبويبات ثابتة
+    - navigation.sections     # أقسام قابلة للطي
+    - navigation.expand       # توسيع تلقائي
+    - navigation.indexes      # صفحات فهرس
+    - navigation.top          # زر العودة للأعلى
+    - navigation.footer       # تنقل في التذييل
+    - toc.follow              # متابعة جدول المحتويات
+    - toc.integrate           # دمج جدول المحتويات
+    - search.suggest          # اقتراحات البحث
+    - search.highlight        # تمييز نتائج البحث
+    - search.share            # مشاركة البحث
+    - header.autohide         # إخفاء الهيدر تلقائياً
+    - content.code.copy       # نسخ الكود
+    - content.code.annotate   # شرح الكود
+    - content.tabs.link       # ربط التبويبات
+    - content.tooltips        # تلميحات الأدوات
+    - content.action.edit     # زر التحرير
+    - content.action.view     # زر العرض
+
+# الإضافات
+plugins:
+  - search:
+      lang: ar
+      separator: '[\s\-\.]+'
+  - tags:
+      tags_file: tags.md
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      fallback_to_build_date: true
+
+# الإضافات الإضافية (Markdown Extensions)
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# الصفحات الإضافية
+extra:
+  # الروابط الاجتماعية
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/alihaidershakermax
+      name: GitHub
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/alihaidershakermax
+      name: Twitter
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/alihaidershakermax
+      name: LinkedIn
+    - icon: fontawesome/solid/envelope
+      link: mailto:ali@example.com
+      name: البريد الإلكتروني
+  
+  # معلومات إضافية
+  generator: false
+  
+  # تخصيص الألوان
+  palette:
+    primary: deep purple
+    accent: pink
+
+# CSS مخصص
+extra_css:
+  - stylesheets/extra.css
+
+# JavaScript مخصص
+extra_javascript:
+  - javascripts/extra.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# هيكل التنقل
+nav:
+  - الرئيسية: index.md
+  - البدء السريع: quick-start.md
+  
+  - المشاريع:
+    - 01-مشاريع/index.md
+  
+  - المعرفة:
+    - 02-معرفة/index.md
+  
+  - الأفكار:
+    - 03-أفكار/index.md
+  
+  - المراجع:
+    - 04-مراجع/index.md
+  
+  - الأدوات:
+    - 05-أدوات/index.md
+  
+  - اليوميات:
+    - 06-يوميات/index.md
+  
+  - الوثائق:
+    - دليل المساهمة: CONTRIBUTING.md
+    - الوسوم: tags.md
+  
+  - الأرشيف:
+    - archive/index.md
+
+# حقوق النشر
+copyright: Copyright &copy; 2026 - علي الأكبر حيدر

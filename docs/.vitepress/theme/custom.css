@@ -1,0 +1,232 @@
+/* دعم RTL للغة العربية */
+:root {
+  --vp-font-family-base: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+  --vp-font-family-mono: 'Fira Code', 'Courier New', monospace;
+}
+
+/* تطبيق RTL على كامل الموقع */
+html[lang="ar"] {
+  direction: rtl;
+}
+
+html[lang="ar"] body {
+  text-align: right;
+}
+
+/* تحسين الهيدر */
+html[lang="ar"] .VPNav {
+  direction: rtl;
+}
+
+html[lang="ar"] .VPNavBar {
+  direction: rtl;
+}
+
+html[lang="ar"] .VPNavBarTitle {
+  direction: rtl;
+}
+
+/* تحسين القائمة */
+html[lang="ar"] .VPMenu {
+  direction: rtl;
+  text-align: right;
+}
+
+html[lang="ar"] .VPMenuGroup {
+  text-align: right;
+}
+
+/* تحسين الشريط الجانبي */
+html[lang="ar"] .VPSidebar {
+  direction: rtl;
+  text-align: right;
+  right: auto;
+  left: 0;
+}
+
+html[lang="ar"] .VPSidebarItem {
+  text-align: right;
+}
+
+/* تحسين المحتوى */
+html[lang="ar"] .VPDoc {
+  direction: rtl;
+  text-align: right;
+}
+
+html[lang="ar"] .vp-doc {
+  direction: rtl;
+  text-align: right;
+}
+
+/* تحسين جدول المحتويات */
+html[lang="ar"] .VPDocAsideOutline {
+  direction: rtl;
+  text-align: right;
+}
+
+/* تحسين البحث */
+html[lang="ar"] .VPNavBarSearch {
+  direction: rtl;
+}
+
+html[lang="ar"] .DocSearch-Button {
+  direction: rtl;
+}
+
+/* تحسين الأزرار */
+html[lang="ar"] .VPButton {
+  direction: rtl;
+}
+
+/* تحسين القوائم */
+html[lang="ar"] ul,
+html[lang="ar"] ol {
+  padding-right: 1.5rem;
+  padding-left: 0;
+}
+
+/* تحسين الاقتباسات */
+html[lang="ar"] blockquote {
+  border-right: 4px solid var(--vp-c-divider);
+  border-left: none;
+  padding-right: 1rem;
+  padding-left: 0;
+}
+
+/* تحسين الأكواد */
+html[lang="ar"] code {
+  direction: ltr;
+  text-align: left;
+}
+
+html[lang="ar"] pre code {
+  direction: ltr;
+  text-align: left;
+}
+
+/* تحسين الجداول */
+html[lang="ar"] table {
+  direction: rtl;
+}
+
+html[lang="ar"] th,
+html[lang="ar"] td {
+  text-align: right;
+}
+
+/* تحسين التنبيهات */
+html[lang="ar"] .custom-block {
+  text-align: right;
+}
+
+/* تحسين الروابط */
+html[lang="ar"] .VPLink {
+  direction: rtl;
+}
+
+/* تحسين التذييل */
+html[lang="ar"] .VPFooter {
+  direction: rtl;
+  text-align: center;
+}
+
+/* تحسين الصفحة الرئيسية */
+html[lang="ar"] .VPHome {
+  direction: rtl;
+}
+
+html[lang="ar"] .VPHero {
+  text-align: center;
+}
+
+html[lang="ar"] .VPFeatures {
+  direction: rtl;
+}
+
+html[lang="ar"] .VPFeature {
+  text-align: right;
+}
+
+/* تحسين الخطوط */
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] h4,
+html[lang="ar"] h5,
+html[lang="ar"] h6 {
+  font-weight: 600;
+}
+
+/* تحسين المسافات */
+html[lang="ar"] p {
+  line-height: 1.8;
+}
+
+/* ألوان مخصصة */
+:root {
+  --vp-c-brand-1: #5f67ee;
+  --vp-c-brand-2: #7983f5;
+  --vp-c-brand-3: #939bf9;
+}
+
+/* تحسين الأزرار */
+.VPButton.brand {
+  background-color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
+}
+
+.VPButton.brand:hover {
+  background-color: var(--vp-c-brand-2);
+  border-color: var(--vp-c-brand-2);
+}
+
+/* تحسين الروابط */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-2);
+  text-decoration: underline;
+}
+
+/* تحسين الكود */
+.vp-doc code {
+  background-color: var(--vp-c-bg-soft);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* تحسين الصور */
+.vp-doc img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* تحسين البطاقات */
+.vp-doc .custom-block {
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/* تحسين الجداول */
+.vp-doc table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* تحسين التنقل بين الصفحات */
+.pager-link {
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.pager-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

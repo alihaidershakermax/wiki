@@ -1,0 +1,64 @@
+# Jekyll Configuration for GitHub Pages
+
+# Site Settings
+title: ويكي علي الأكبر حيدر
+description: مستودع مركزي للمعرفة الشخصية، المشاريع، والأفكار
+author: علي الأكبر حيدر
+lang: ar
+dir: rtl
+
+# Theme
+theme: minima
+# Alternative themes: jekyll-theme-midnight, jekyll-theme-cayman
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  knowledge:
+    output: true
+    permalink: /knowledge/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      lang: "ar"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      lang: "ar"
+
+# Exclude from processing
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+  - vendor/
+  - node_modules/
+
+# Include
+include:
+  - _pages
+
+# Permalink
+permalink: /:categories/:year/:month/:day/:title/
+
+# Timezone
+timezone: Asia/Riyadh

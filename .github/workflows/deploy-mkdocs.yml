@@ -1,0 +1,35 @@
+name: نشر MkDocs على GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: استنساخ المستودع
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # للحصول على تاريخ Git الكامل
+      
+      - name: إعداد Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      
+      - name: تثبيت المتطلبات
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: بناء ونشر MkDocs
+        run: |
+          mkdocs gh-deploy --force --clean --verbose
