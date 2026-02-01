@@ -5,7 +5,7 @@
 **3 خيارات متاحة:** Jekyll | MkDocs | VitePress (مثل FMHY.net)
 
 [![النشر](https://github.com/alihaidershakermax/wiki/workflows/Deploy%20MkDocs/badge.svg)](https://github.com/alihaidershakermax/wiki/actions)
-[![الترخيص](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![الترخيص](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/alihaidershakermax/wiki/blob/main/LICENSE)
 
 ## 🌟 نظرة عامة
 
@@ -148,9 +148,9 @@ theme:
 
 ## 📚 الوثائق
 
-- [دليل البدء السريع](docs/quick-start.md)
-- [دليل الإعداد الكامل](docs/setup-guide.md)
-- [دليل المساهمة](CONTRIBUTING.md)
+- دليل البدء السريع
+- دليل الإعداد الكامل
+- دليل المساهمة
 
 ## 🛠️ الأوامر المفيدة
 
@@ -170,11 +170,11 @@ mkdocs --version
 
 ## 🤝 المساهمة
 
-المساهمات مرحب بها! اقرأ [دليل المساهمة](CONTRIBUTING.md) للمزيد من المعلومات.
+المساهمات مرحب بها!
 
 ## 📄 الترخيص
 
-هذا المشروع مرخص تحت [رخصة MIT](LICENSE)
+هذا المشروع مرخص تحت رخصة MIT
 
 ## 🔗 روابط مفيدة
 
