@@ -1,7 +1,7 @@
 {
   "project": {
     "name": "ويكي علي الأكبر حيدر",
-    "description": "مستودع مركزي للمعرفة الشخصية، المشاريع، والأفكار",
+    "description": "مطور | طالب هندسة نفط - مستودع مركزي للمعرفة الشخصية، المشاريع، والأفكار",
     "type": "digital-garden",
     "platform": "GitHub",
     "version": "1.0.0"
@@ -136,8 +136,9 @@
   },
   "metadata": {
     "author": "علي الأكبر حيدر",
+    "bio": "مطور | طالب هندسة نفط",
     "created_date": "2026-02-01",
-    "last_updated": "2026-02-01",
+    "last_updated": "2026-02-02",
     "language": "ar",
     "license": "MIT"
   },

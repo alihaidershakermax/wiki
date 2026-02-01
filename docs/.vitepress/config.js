@@ -1,7 +1,7 @@
 export default {
   // معلومات الموقع
   title: 'ويكي علي الأكبر حيدر',
-  description: 'مستودع مركزي للمعرفة الشخصية، المشاريع، والأفكار',
+  description: 'مطور | طالب هندسة نفط - مستودع مركزي للمعرفة الشخصية، المشاريع، والأفكار',
   lang: 'ar',
   
   // Base URL (غيّر هذا لاسم مستودعك)
@@ -173,8 +173,8 @@ export default {
     ['meta', { name: 'theme-color', content: '#5f67ee' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'ar' }],
-    ['meta', { property: 'og:title', content: 'ويكي علي الأكبر حيدر' }],
+    ['meta', { property: 'og:title', content: 'ويكي علي الأكبر حيدر - مطور | طالب هندسة نفط' }],
     ['meta', { property: 'og:site_name', content: 'ويكي علي الأكبر حيدر' }],
-    ['meta', { property: 'og:description', content: 'مستودع مركزي للمعرفة الشخصية' }]
+    ['meta', { property: 'og:description', content: 'مستودع مركزي للمعرفة الشخصية والمشاريع' }]
   ]
 }
