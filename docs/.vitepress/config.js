@@ -7,6 +7,9 @@ export default {
   // Base URL (غيّر هذا لاسم مستودعك)
   base: '/wiki/',
   
+  // تجاهل الملفات خارج docs
+  srcExclude: ['**/README.md', '!docs/**'],
+  
   // الثيم
   themeConfig: {
     // الشعار
