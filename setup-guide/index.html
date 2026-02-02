@@ -12,10 +12,8 @@
         <meta name="author" content="علي الأكبر حيدر">
       
       
-        <link rel="canonical" href="https://alihaidershakermax.github.io/wiki/archive/">
+        <link rel="canonical" href="https://alihaidershakermax.github.io/wiki/setup-guide/">
       
-      
-        <link rel="prev" href="../tags/">
       
       
       
@@ -27,7 +25,7 @@
     
     
       
-        <title>📦 الأرشيف - ويكي علي الأكبر حيدر</title>
+        <title>📖 دليل الإعداد الكامل - ويكي علي الأكبر حيدر</title>
       
     
     
@@ -116,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              📦 الأرشيف
+              📖 دليل الإعداد الكامل
             
           </span>
         </div>
@@ -418,13 +416,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../archive/" class="md-tabs__link">
           
   
   
@@ -1098,8 +1094,6 @@
       
   
   
-    
-  
   
   
     
@@ -1113,23 +1107,22 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../archive/" class="md-nav__link ">
               
   
   
@@ -1148,7 +1141,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1185,7 +1178,7 @@
 
 
   
-    <a href="https://github.com/alihaidershakermax/wiki/edit/main/docs/archive/index.md" title="عدل الصفحة" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/alihaidershakermax/wiki/edit/main/docs/setup-guide.md" title="عدل الصفحة" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
     </a>
@@ -1194,55 +1187,256 @@
     
       
     
-    <a href="https://github.com/alihaidershakermax/wiki/raw/main/docs/archive/index.md" title="عرض مصدر هذه الصفحة" class="md-content__button md-icon">
+    <a href="https://github.com/alihaidershakermax/wiki/raw/main/docs/setup-guide.md" title="عرض مصدر هذه الصفحة" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
   
 
 
-<h1 id="_1">📦 الأرشيف<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">المحتوى المؤرشف<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="admonition info">
-<p class="admonition-title">لا يوجد محتوى مؤرشف</p>
-<p>المحتوى القديم سيظهر هنا.</p>
-</div>
-<h2 id="_3">سياسة الأرشفة<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>يتم نقل المحتوى إلى الأرشيف عندما:</p>
+<h1 id="_1">📖 دليل الإعداد الكامل<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">نظرة عامة<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>هذا الدليل يشرح كيفية إعداد ويكي شخصي مثل <a href="https://fmhy.net/">FMHY.net</a> باستخدام <strong>MkDocs</strong> و <strong>Material for MkDocs</strong>.</p>
+<h2 id="mkdocs">ما هو MkDocs؟<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h2>
+<p><strong>MkDocs</strong> هو مولد مواقع ثابتة (Static Site Generator) مصمم خصيصاً للوثائق. يستخدم ملفات Markdown البسيطة لإنشاء مواقع احترافية.</p>
+<h3 id="_3">المميزات<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <ul>
-<li>✅ لم يعد المحتوى نشطاً</li>
-<li>✅ انتهى المشروع</li>
-<li>✅ المعلومات قديمة ولكن قد تكون مفيدة للمرجع</li>
-<li>✅ المحتوى تم استبداله بنسخة أحدث</li>
+<li>✅ سهل الاستخدام</li>
+<li>✅ سريع جداً</li>
+<li>✅ ثيمات جميلة</li>
+<li>✅ بحث مدمج</li>
+<li>✅ متجاوب (Responsive)</li>
+<li>✅ مجاني ومفتوح المصدر</li>
 </ul>
-<h2 id="_4">التصنيفات<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">مشاريع قديمة</label><label for="__tabbed_1_2">مقالات قديمة</label><label for="__tabbed_1_3">أفكار ملغاة</label><label for="__tabbed_1_4">أخرى</label></div>
+<h2 id="_4">الإعداد الأولي<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="1-python">1. تثبيت Python<a class="headerlink" href="#1-python" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">macOS</label><label for="__tabbed_1_3">Linux</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>لا توجد مشاريع مؤرشفة</p>
+<p>قم بتحميل Python من <a href="https://www.python.org/downloads/">python.org</a></p>
+<p>تأكد من تحديد "Add Python to PATH" أثناء التثبيت.</p>
 </div>
 <div class="tabbed-block">
-<p>لا توجد مقالات مؤرشفة</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>brew<span class="w"> </span>install<span class="w"> </span>python3
+</span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>لا توجد أفكار ملغاة</p>
-</div>
-<div class="tabbed-block">
-<p>لا يوجد محتوى آخر</p>
-</div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3<span class="w"> </span>python3-pip
+</span></code></pre></div>
 </div>
 </div>
-<h2 id="_5">البحث في الأرشيف<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p>استخدم خاصية البحث للعثور على محتوى مؤرشف.</p>
-<h2 id="_6">نصائح<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<div class="admonition tip">
-<p class="admonition-title">نصائح للأرشفة</p>
+</div>
+<h3 id="2-mkdocs-material">2. تثبيت MkDocs و Material<a class="headerlink" href="#2-mkdocs-material" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material
+</span></code></pre></div>
+<h3 id="3">3. التحقق من التثبيت<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>mkdocs<span class="w"> </span>--version
+</span></code></pre></div>
+<p>يجب أن ترى شيئاً مثل:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>mkdocs, version 1.5.3
+</span></code></pre></div></p>
+<h2 id="_5">إنشاء مشروع جديد<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="_6">الطريقة الأولى: استخدام هذا القالب<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/username/personal-wiki.git
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">cd</span><span class="w"> </span>personal-wiki
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>mkdocs<span class="w"> </span>serve
+</span></code></pre></div>
+<h3 id="_7">الطريقة الثانية: البدء من الصفر<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>mkdocs<span class="w"> </span>new<span class="w"> </span>my-wiki
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">cd</span><span class="w"> </span>my-wiki
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>mkdocs<span class="w"> </span>serve
+</span></code></pre></div>
+<h2 id="_8">هيكل المشروع<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>personal-wiki/
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>├── docs/                    # ملفات Markdown
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>│   ├── index.md            # الصفحة الرئيسية
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>│   ├── 01-مشاريع/
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>│   ├── 02-معرفة/
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>│   ├── stylesheets/        # CSS مخصص
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>│   └── javascripts/        # JS مخصص
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>├── mkdocs.yml              # ملف الإعدادات
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>├── requirements.txt        # المتطلبات
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>└── .github/
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>    └── workflows/
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>        └── deploy-mkdocs.yml  # GitHub Actions
+</span></code></pre></div>
+<h2 id="mkdocsyml">ملف الإعدادات (mkdocs.yml)<a class="headerlink" href="#mkdocsyml" title="Permanent link">&para;</a></h2>
+<h3 id="_9">الإعدادات الأساسية<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">اسم الموقع</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nt">site_description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">وصف الموقع</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nt">site_author</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">اسمك</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nt">site_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://username.github.io/repo/</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="nt">theme</span><span class="p">:</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ar</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">  </span><span class="nt">direction</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rtl</span>
+</span></code></pre></div>
+<h3 id="_10">تخصيص الألوان<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nt">theme</span><span class="p">:</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="nt">palette</span><span class="p">:</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">scheme</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">      </span><span class="nt">primary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">indigo</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">      </span><span class="nt">accent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">indigo</span>
+</span></code></pre></div>
+<h3 id="_11">تفعيل الميزات<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nt">theme</span><span class="p">:</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.instant</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.tabs</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.sections</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search.suggest</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search.highlight</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.copy</span>
+</span></code></pre></div>
+<h2 id="github-pages">النشر على GitHub Pages<a class="headerlink" href="#github-pages" title="Permanent link">&para;</a></h2>
+<h3 id="_12">الطريقة التلقائية (موصى بها)<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<ol>
+<li>أنشئ ملف <code>.github/workflows/deploy-mkdocs.yml</code>:</li>
+</ol>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deploy MkDocs</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="nt">on</span><span class="p">:</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">main</span><span class="p p-Indicator">]</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="nt">jobs</span><span class="p">:</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v5</span>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">          </span><span class="nt">python-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.x</span>
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -r requirements.txt</span>
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span>
+</span></code></pre></div>
+<ol>
+<li>ادفع الكود:</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;✨ feat: إعداد الويكي&quot;</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</span></code></pre></div>
+<ol>
+<li>فعّل GitHub Pages:</li>
+<li>اذهب إلى Settings &gt; Pages</li>
+<li>اختر الفرع <code>gh-pages</code></li>
+<li>احفظ</li>
+</ol>
+<h3 id="_13">الطريقة اليدوية<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>mkdocs<span class="w"> </span>gh-deploy
+</span></code></pre></div>
+<h2 id="_14">التخصيص المتقدم<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<h3 id="css">إضافة CSS مخصص<a class="headerlink" href="#css" title="Permanent link">&para;</a></h3>
+<p>أنشئ <code>docs/stylesheets/extra.css</code>:</p>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">  </span><span class="nv">--md-primary-fg-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#3f51b5</span><span class="p">;</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="p">}</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="p">.</span><span class="nc">md-header</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--md-primary-fg-color</span><span class="p">);</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>ثم أضف في <code>mkdocs.yml</code>:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nt">extra_css</span><span class="p">:</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stylesheets/extra.css</span>
+</span></code></pre></div>
+<h3 id="javascript">إضافة JavaScript مخصص<a class="headerlink" href="#javascript" title="Permanent link">&para;</a></h3>
+<p>أنشئ <code>docs/javascripts/extra.js</code>:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;الويكي جاهز!&#39;</span><span class="p">);</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="p">});</span>
+</span></code></pre></div>
+<p>ثم أضف في <code>mkdocs.yml</code>:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nt">extra_javascript</span><span class="p">:</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">javascripts/extra.js</span>
+</span></code></pre></div>
+<h3 id="_15">إضافة أيقونات مخصصة<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nt">theme</span><span class="p">:</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">  </span><span class="nt">icon</span><span class="p">:</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">    </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontawesome/brands/github</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">    </span><span class="nt">edit</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material/pencil</span>
+</span></code></pre></div>
+<h2 id="_16">الإضافات المفيدة<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<h3 id="_17">البحث المتقدم<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nt">plugins</span><span class="p">:</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">search</span><span class="p">:</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ar</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">      </span><span class="nt">separator</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;[\s\-\.]+&#39;</span>
+</span></code></pre></div>
+<h3 id="git">تواريخ Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h3>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="nt">plugins</span><span class="p">:</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-revision-date-localized</span><span class="p">:</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">      </span><span class="nt">enable_creation_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span></code></pre></div>
+<h3 id="_18">الوسوم<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="nt">plugins</span><span class="p">:</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">tags</span><span class="p">:</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">      </span><span class="nt">tags_file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tags.md</span>
+</span></code></pre></div>
+<h2 id="_19">نصائح للأداء<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
+<h3 id="_20">تحسين الصور<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
 <ul>
-<li>لا تحذف المحتوى، أرشفه</li>
-<li>أضف سبب الأرشفة</li>
-<li>احتفظ بالروابط للمحتوى المؤرشف</li>
-<li>راجع الأرشيف بانتظام</li>
+<li>استخدم WebP بدلاً من PNG/JPG</li>
+<li>ضغط الصور قبل الرفع</li>
+<li>استخدم أحجام مناسبة</li>
 </ul>
+<h3 id="_21">تقليل حجم الملفات<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<ul>
+<li>تجنب الملفات الكبيرة</li>
+<li>استخدم روابط خارجية للملفات الكبيرة</li>
+<li>نظف الملفات غير المستخدمة</li>
+</ul>
+<h3 id="_22">التخزين المؤقت<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<p>MkDocs يستخدم التخزين المؤقت تلقائياً.</p>
+<h2 id="_23">استكشاف الأخطاء<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
+<h3 id="mkdocs-command-not-found">الخطأ: <code>mkdocs: command not found</code><a class="headerlink" href="#mkdocs-command-not-found" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>mkdocs
+</span></code></pre></div>
+<h3 id="_24">الخطأ: الموقع لا يظهر<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<ol>
+<li>تحقق من إعدادات GitHub Pages</li>
+<li>تأكد من وجود الفرع <code>gh-pages</code></li>
+<li>انتظر بضع دقائق</li>
+</ol>
+<h3 id="_25">الخطأ: الخطوط العربية لا تظهر<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<p>تأكد من:
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="nt">theme</span><span class="p">:</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">  </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ar</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">  </span><span class="nt">direction</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rtl</span>
+</span></code></pre></div></p>
+<h2 id="_26">الموارد<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h2>
+<h3 id="_27">الوثائق الرسمية<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.mkdocs.org/">MkDocs</a></li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></li>
+</ul>
+<h3 id="_28">أمثلة<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://fmhy.net/">FMHY</a></li>
+<li><a href="https://fastapi.tiangolo.com/">FastAPI Docs</a></li>
+<li><a href="https://kubernetes.io/docs/">Kubernetes Docs</a></li>
+</ul>
+<h3 id="_29">المجتمع<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/squidfunk/mkdocs-material/discussions">GitHub Discussions</a></li>
+<li><a href="https://discord.gg/squidfunk">Discord</a></li>
+</ul>
+<h2 id="_30">الخطوات التالية<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> تخصيص الألوان والثيم</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> إضافة محتوى</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> تفعيل GitHub Actions</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> إضافة نطاق مخصص (اختياري)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> إضافة Google Analytics (اختياري)</li>
+</ul>
+<hr />
+<div class="admonition success">
+<p class="admonition-title">تهانينا!</p>
+<p>الآن لديك ويكي احترافي مثل FMHY! 🎉</p>
 </div>
 
 
@@ -1308,28 +1502,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="هامش سفلي" >
-        
-          
-          <a href="../tags/" class="md-footer__link md-footer__link--prev" aria-label="السابقة: الوسوم">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                السابقة
-              </span>
-              <div class="md-ellipsis">
-                الوسوم
-              </div>
-            </div>
-          </a>
-        
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
