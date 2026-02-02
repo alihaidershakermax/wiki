@@ -666,7 +666,6 @@ graph TD
 
 - [دليل الكتابة](./writing-guide.md)
 - [هندسة البرومبتات](./prompt-engineering.md)
-- [أمثلة JSON](./json-examples.md)
 
 ---
 
